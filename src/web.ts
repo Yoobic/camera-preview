@@ -132,10 +132,3 @@ export class CameraPreviewWeb extends WebPlugin implements CameraPreviewPlugin {
     throw new Error('flip not supported under the web platform');
   }
 }
-
-const CameraPreview = new CameraPreviewWeb();
-
-export { CameraPreview };
-
-import { registerWebPlugin } from "@capacitor/core";
-registerWebPlugin(CameraPreview);
